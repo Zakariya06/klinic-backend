@@ -17,6 +17,7 @@ import videoCallRouter from "./routes/videoCallRoutes";
 import ratingRouter from "./routes/ratingRoutes";
 import deliveryRouter from "./routes/deliveryRoutes";
 import accountDeletionRouter from "./routes/accountDeletionRoutes";
+import ServerlessHttp from "serverless-http";
 
 import aiRouter from "./routes/aiRoutes";
 import productRouter from "./routes/productRoutes";
@@ -76,3 +77,5 @@ app.get('/api/v1/health', (req, res) => {
 app.listen(process.env.PORT || 3000, () => {
   console.log(`Server is running on port ${process.env.PORT || 3000}`);
 });
+
+module.exports.handler = ServerlessHttp(app);

@@ -44,6 +44,7 @@
     "pdf-text-reader": "^5.1.0",
     "razorpay": "^2.9.6",
     "resend": "^4.5.1",
+    "serverless-http": "^4.0.0",
     "similarity": "^1.2.1",
     "stopword": "^2.0.8",
     "uuid": "^11.1.0",
